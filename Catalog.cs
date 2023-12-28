@@ -22,7 +22,6 @@ namespace lab2v7
 
         public List<Composition> Search(string criteria)
         {
-            // Пример простого поиска по критерию в названии или исполнителе
             return compositions.FindAll(c =>
                 c.Artist.Contains(criteria, StringComparison.OrdinalIgnoreCase) ||
                 c.Title.Contains(criteria, StringComparison.OrdinalIgnoreCase));
@@ -30,7 +29,6 @@ namespace lab2v7
 
         public List<Composition> Search(string artistCriteria, string TitleCriteria)
         {
-            // Пример простого поиска по критерию в названии или исполнителе
             return compositions.FindAll(c =>
                 c.Artist.Contains(artistCriteria, StringComparison.OrdinalIgnoreCase) ||
                 c.Title.Contains(TitleCriteria, StringComparison.OrdinalIgnoreCase));
